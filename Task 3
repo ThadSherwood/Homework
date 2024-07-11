@@ -23,3 +23,4 @@ order by ResultPercent desc
 
 --I was not able to get the percentages to calculate properly, initially.  For some reason the query is only calculating anything that is 100%.  Other percentages all come back as zero. 
 --I spent the bulk of my time on this task and after just over 8 hours, eventually I looked googled "percentages only calculating at 100%" and found to add "* 1.0" to the dividend calculation and this fixed my issue. 
+--From the Data, The  southeast coast of the US seems to be a hot spot based on the Carolina's and Virginia being in the top ten for positive tests during the last 30 days of the data that was available.
