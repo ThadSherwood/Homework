@@ -1,0 +1,25 @@
+--The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
+
+--This is the version that is written specifically for 30 days from the last reported data.
+
+WITH tempTable1 AS (SELECT state_name,COALESCE(SUM(new_results_reported),0) as PosTest from homework where overall_outcome = 'positive'and date >= '2024-05-02' group by state_name),
+ tempTable2 AS (SELECT state_name, COALESCE(SUM(new_results_reported),0) as TotalTest from homework where date >= '2024-05-02' Group by state_name)
+Select Top 10 a.state_name, (a.PosTest/nullif(b.TotalTest,0)*100) as ResultPercent
+	from tempTable1 a
+	inner join tempTable2 b on a.state_name = b.state_name
+group by a.state_name, a.PosTest, b.TotalTest
+order by ResultPercent desc
+
+--This would be the version that is written for a dynamic date
+
+WITH #tempTable1 AS (SELECT state_name,COALESCE(SUM(new_results_reported),0) as PosTest from homework where overall_outcome = 'positive'and date >= (select getdate() -30) group by state_name),
+ #tempTable2 AS (SELECT state_name, COALESCE(SUM(new_results_reported),0) as TotalTest from homework where date >= (select getdate() -30) Group by state_name)
+Select Top 10 a.state_name,a.PosTest,b.TotalTest, (a.PosTest/nullif(b.TotalTest,0)*100) as ResultPercent
+	from #tempTable1 a
+	inner join #tempTable2 b on a.state_name = b.state_name
+group by a.state_name, a.PosTest, b.TotalTest
+order by ResultPercent desc
+
+--I was not able to get the percentages to calculate properly.  For some reason the query is only calculating anything that is 100%.  Other percentages all come back as zero. 
+--I spent the bulk of my time on this task and after just over 8 hours, I felt that it was fair of me to submit what I have so far. 
+--I know the top 10 is not correct on the results, it would have been if I could've gotten the percentage to calculate properly. 
