@@ -1,12 +1,13 @@
 ﻿weekDay                        DailyAvg
 ------------------------------ -----------
-Friday                         23107
 Monday                         22386
-Saturday                       17064
-Sunday                         15509
-Thursday                       25573
 Tuesday                        22249
 Wednesday                      18633
+Thursday                       25573
+Friday                         23107
+Saturday                       17064
+Sunday                         15509
+
 
 (7 rows affected)
 
