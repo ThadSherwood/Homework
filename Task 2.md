@@ -18,4 +18,5 @@ Select weekDay, SUM(new_results_reported) / 7  as DailyAvg from tempTable
 where Date >= '2024-05-02'
 group by weekDay
 ```
-Results show that either less people are getting tested on the weekend.  Possibly trying to wait out the weekend in the hopes that they just have a cold and hoping that the symptoms will subside by monday.
+Results show that either less people are getting tested on the weekend.  Possibly trying to wait out the weekend in the hopes that they just have a cold and hoping that the symptoms will subside by Monday.
+The data did not sort the way that I would have preferred, so I manually sorted the results into the correct ordered date, given the time restrictions.
