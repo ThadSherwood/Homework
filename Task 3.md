@@ -24,3 +24,5 @@ Select Top 10 a.state_name,a.PosTest,b.TotalTest, (a.PosTest * 1.0/nullif(b.Tota
 group by a.state_name, a.PosTest, b.TotalTest
 order by ResultPercent desc
 ```
+
+Based on the data, it appears that the Southeast coast of the US appears to be a hotspot for positive test results for the last 30 days of the collected Data.
