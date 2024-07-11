@@ -2,7 +2,7 @@
 
 This query would be for a dynamic date.
 
-'''SQL
+'''sql
 WITH tempTable AS (SELECT DATENAME(WEEKDAY, Date) AS weekDay, Date, new_results_reported from Homework)
 Select weekDay, SUM(new_results_reported) / 7  as DailyAvg from tempTable
 where Date >= (select getdate() - 30)
@@ -12,7 +12,7 @@ group by weekDay
 Since the newest data in the data set is older than 30 days, the result would be NULL.
 In this case I am running the query from the necessary date forward as written below.
 
-'''SQL
+'''sql
 WITH tempTable AS (SELECT DATENAME(WEEKDAY, Date) AS weekDay, Date, new_results_reported from Homework)
 Select weekDay, SUM(new_results_reported) / 7  as DailyAvg from tempTable
 where Date >= '2024-05-02'
