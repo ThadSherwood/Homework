@@ -8,5 +8,5 @@ I used the sum of "New Results Reported" because summing the result types are al
 ```sql
 SELECT Sum(NEW_Results_Reported) as 'Total Tests performed' 
   FROM Homework
-  where Date <= @Date -- added this line for dynamic date in SQL reporting
+  where Date <= (select getdate() -1) -- added this line for dynamic date in SQL reporting
 ```
