@@ -1,5 +1,5 @@
 # Task 3
-The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
+## The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
 
 This is the version that is written specifically for 30 days from the last reported data.
 
