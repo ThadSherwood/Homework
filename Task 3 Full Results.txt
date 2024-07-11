@@ -1,0 +1,47 @@
+﻿state_name                                         PosTest     TotalTest   ResultPercent
+-------------------------------------------------- ----------- ----------- -------------
+U.S. Virgin Islands                                6           6           100
+South Carolina                                     1444        1444        100
+Tennessee                                          958         22214       0
+Vermont                                            114         155         0
+Georgia                                            1556        56574       0
+Guam                                               92          96          0
+Idaho                                              277         391         0
+Massachusetts                                      2245        52331       0
+Nevada                                             1089        8873        0
+New Jersey                                         2815        43350       0
+New York                                           11512       117853      0
+Oklahoma                                           713         14469       0
+Arizona                                            1224        12603       0
+Arkansas                                           504         11912       0
+Hawaii                                             1265        12080       0
+Kansas                                             272         6367        0
+Kentucky                                           1227        41552       0
+Maine                                              301         4314        0
+Nebraska                                           88          2885        0
+Ohio                                               2132        39721       0
+Washington                                         2037        2234        0
+Virginia                                           2049        2764        0
+West Virginia                                      441         13198       0
+California                                         7640        266296      0
+District of Columbia                               261         7163        0
+Illinois                                           3245        89435       0
+Indiana                                            474         22127       0
+Louisiana                                          1255        34813       0
+Michigan                                           1816        33896       0
+Montana                                            278         968         0
+New Hampshire                                      247         6042        0
+North Dakota                                       80          142         0
+South Dakota                                       261         1776        0
+Maryland                                           1793        47855       0
+North Carolina                                     1971        1973        0
+Puerto Rico                                        1167        7181        0
+Rhode Island                                       227         9074        0
+Utah                                               1220        14088       0
+Wisconsin                                          627         663         0
+Wyoming                                            96          791         0
+
+(40 rows affected)
+
+
+Completion time: 2024-07-10T21:53:28.9916726-04:00
